@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="landingPage.css" rel="stylesheet">
+    <title>Hakurei Shrine Clone</title>
+    <link rel="icon" href="resources/logoeldenring1.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="backgroundContainer">
+        <video id ="background" muted autoplay loop>
+            <source src="resources/eldenbackground.mp4" type="video/mp4">
+        </video>
+
+        <audio id="backgroundMusic" class="bgm" src="resources/eldenbackgroundmusic.mp3" loop></audio>
+    </div>
+
+    <div class="headerBar">
+
+        <!-- LEFT BAR -->
+        <div class="leftBarContainer">
+            <a class="logoContainer" href=".">
+                <div class="logoImageContainer">
+                    <img class="logoImage" src="resources/logoeldenring1.png">
+                </div>
+                <!-- IM MOST LIKELY GONNA HAVE 
+                 TO FIND A FONT FOR THIS  -BELOW-->
+                <div class="logoEldenRing">
+                    Elden Ring
+                </div>
+            </a>
+
+            <img id="audioController" src="resources/audioControllerOn.png" onclick="audioController(); imageChange();">
+        </div>
+
+        <!-- SOURCE CONTAINER -->
+        <div class="sourcesContainer">
+            <button class="link" onclick ="showOrHide()">Sources</button>
+            <div class="dropdownContent">
+                <div class="aboutCopyright">
+                    Just in case there are some issues with copyright. I do not expect to use this for comercial use. I am only using this for practicing HTML,CSS & JS
+                </div>
+                <br>
+                <div class = "sourceC">First background author (MerlimAmbrosuis): <a class = "sourcesLink" href = "https://www.pixiv.net/en/users/25088958/illustrations" target = "_blank">https://www.pixiv.net/en/users/25088958/illustrations</a></div>
+                <br>
+                <div class="sourceC">First Background Source: <a class="sourcesLink" href="https://www.youtube.com/watch?v=VzLTLNwHNlM&list=PL_mGxmgVfH1OdjJ1Ue7vEAXLi04Ln7Ul-" target="_blank">https://www.youtube.com/watch?v=VzLTLNwHNlM&list=PL_mGxmgVfH1OdjJ1Ue7vEAXLi04Ln7Ul- </a> | A channel that primarily uploads open source animated backgrounds</div>
+                <div class="dm">If you have any concerns about the availability of any of the content here, then please send me a message(ill add my contact here later)</div>
+            </div>
+        </div>
+
+        <!-- RIGHT BAR -->
+        <div class="rightBarContainer">
+            <div class="rightBarStuff">
+                <a class="about hamburgerStuff" href="#">ABOUT</a>
+                <img class="separator hamburgerStuff" src="resources/glowySquare.png">
+                <a class="characters hamburgerStuff" href="#">CHARACTERS</a>
+                <img class="separator hamburgerStuff" src="resources/glowySquare.png">
+                <a class="music hamburgerStuff" href="#">FAQ</a>
+                <img class="separator hamburgerStuff" src="resources/glowySquare.png">
+                <a class="contact hamburgerStuff" href="#">CONTACT</a>
+            </div>
+            <div class="menuHamburger"><div class="menuHamburgerBtn"></div></div>
+        </div>
+    </div>
+
+    <!-- FIRST LAYER -->
+
+</body>
+<script src="landingPage.js"></script>
+</html> 
